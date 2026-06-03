@@ -9,7 +9,7 @@ import automation.platforms.core.academic.bankframework.BankFrameworkSteps;
 import automation.platforms.core.academic.sidemenu.MenuCoreOptions;
 import automation.platforms.core.academic.sidemenu.MenuCorePage;
 import automation.platforms.core.academic.sidemenu.MenuCoreSteps;
-import automation.platforms.base.SekolahmuElement;
+import automation.platforms.base.BaseElement;
 import automation.platforms.core.user.login.LoginCoreModel;
 import automation.platforms.core.user.login.LoginCorePage;
 import automation.platforms.core.user.login.LoginCoreSteps;
@@ -26,7 +26,7 @@ public class BankFrameworkTest extends BaseCoreDriverTest implements BankFramewo
     private LoginCoreSteps loginCoreSteps;
     private LoginCoreModel loginCoreModel;
     private MenuCoreSteps menuCoreSteps;
-    private SekolahmuElement sekolahmuElement;
+    private BaseElement baseElement;
 
     @Override
     public void initInstance() {
@@ -36,7 +36,7 @@ public class BankFrameworkTest extends BaseCoreDriverTest implements BankFramewo
         loginCoreSteps = new LoginCorePage(page);
         loginCoreModel = new LoginCoreModel();
         menuCoreSteps = new MenuCorePage(page);
-        sekolahmuElement = new SekolahmuElement(page);
+        baseElement = new BaseElement(page);
     }
 
     @Test(priority = 1, description = "CA-364, CA-386, CA-389, CA-390, CA-392, CA-403, CA-401, CA-367, CA-368")
@@ -81,7 +81,7 @@ public class BankFrameworkTest extends BaseCoreDriverTest implements BankFramewo
         loginCoreSteps.injectLoginCoreCookies();
         verifyStep(menuCoreSteps.navigateToMenu(MenuCoreOptions.MANAGE_BANK_FRAMEWORK),
                 "Successfully navigate to Bank Framework menu", "Failed navigate to Bank Framework menu");
-        verifyStep(sekolahmuElement.navigateToUrl("https://core.dev.sid.id/framework/231"),
+        verifyStep(baseElement.navigateToUrl(GlobalVariable.getInstance().getBaseUrl() + "/framework/{FRAMEWORK_ID}"),
                 "Successfully navigate to 404 page", "Failed navigate to 404 page");
     }
 
@@ -238,7 +238,7 @@ public class BankFrameworkTest extends BaseCoreDriverTest implements BankFramewo
         loginCoreSteps.injectLoginCoreCookies();
         verifyStep(menuCoreSteps.navigateToMenu(MenuCoreOptions.MANAGE_BANK_FRAMEWORK),
                 "Successfully navigate to Bank Framework menu", "Failed navigate to Bank Framework menu");
-        verifyStep(sekolahmuElement.navigateToUrl("https://core.dev.sid.id/framework/edit/137"),
+        verifyStep(baseElement.navigateToUrl(GlobalVariable.getInstance().getBaseUrl() + "/framework/edit/{FRAMEWORK_ID}"),
                 "Successfully navigate to Edit Framework page using URL with valid ID",
                 "Failed navigate to Edit Framework page using URL with valid ID");
     }
@@ -248,7 +248,7 @@ public class BankFrameworkTest extends BaseCoreDriverTest implements BankFramewo
         loginCoreSteps.injectLoginCoreCookies();
         verifyStep(menuCoreSteps.navigateToMenu(MenuCoreOptions.MANAGE_BANK_FRAMEWORK),
                 "Successfully navigate to Bank Framework menu", "Failed navigate to Bank Framework menu");
-        verifyStep(sekolahmuElement.navigateToUrl("https://core.dev.sid.id/framework/edit/02913918237"),
+        verifyStep(baseElement.navigateToUrl(GlobalVariable.getInstance().getBaseUrl() + "/framework/edit/{INVALID_ID}"),
                 "Successfully navigate to 404 page using URL with non-existing ID",
                 "Failed navigate to 404 page using URL with non-existing ID");
     }
@@ -258,7 +258,7 @@ public class BankFrameworkTest extends BaseCoreDriverTest implements BankFramewo
         loginCoreSteps.injectLoginCoreCookies();
         verifyStep(menuCoreSteps.navigateToMenu(MenuCoreOptions.MANAGE_BANK_FRAMEWORK),
                 "Successfully navigate to Bank Framework menu", "Failed navigate to Bank Framework menu");
-        sekolahmuElement.navigateToUrl("https://core.dev.sid.id/framework/edit/137");
+        baseElement.navigateToUrl(GlobalVariable.getInstance().getBaseUrl() + "/framework/edit/{FRAMEWORK_ID}");
         verifyStep(bankFrameworkSteps.fillNameBankFramework(""), "Successfully fill name bank framework",
                 "Failed fill name bank framework");
         verifyStep(bankFrameworkSteps.clickButtonSaveFramework(), "Successfully click Save framework",

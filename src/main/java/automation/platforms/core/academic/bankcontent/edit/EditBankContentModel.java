@@ -16,7 +16,7 @@ public class EditBankContentModel extends BaseModel {
     }
 
     public EditBankContentModel validEditBankContent() {
-        nameContent = "Audio Automation Edited" + randomNumber;
+        nameContent = "[Automation] Content Edited " + randomNumber;
         instructionLearning = "Instruksi belajar edited";
         return this;
     }

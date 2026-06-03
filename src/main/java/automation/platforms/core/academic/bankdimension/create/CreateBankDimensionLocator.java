@@ -15,7 +15,7 @@ public class CreateBankDimensionLocator extends BaseLocator {
     public final String ALERT_ERROR = "//img[contains(@src,'error.svg')]";
     public final String FIELD_ORGANIZATION = "#organization-dropdown";
     public final String INPUT_ORGANIZATION = "#input-organization-dropdown";
-    public final String SELECT_ORGANIZATION = "#dropdown-option-151";
+    public final String SELECT_ORGANIZATION = "#dropdown-option-{ORGANIZATION_ID}";
     public final String SEARCH_ELEMENT = "#input-element-dropdown";
     public final String SELECT_MULTIPLE_ELEMENT = "#dropdown-select-all-element-dropdown";
     public final String INPUT_SEARCH = "#dimension-search-field-input";

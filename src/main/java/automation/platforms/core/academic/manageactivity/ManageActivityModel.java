@@ -20,12 +20,12 @@ public class ManageActivityModel extends BaseModel {
     public boolean enableSchedule;
 
     public ManageActivityModel searchByValidId(){
-        searchKeyword = "78";
+        searchKeyword = System.getenv().getOrDefault("TEST_ACTIVITY_ID", "1");
         return this;
     }
 
     public ManageActivityModel searchByValidName(){
-        searchKeyword = "NSY - Smoketest Activity Platform";
+        searchKeyword = System.getenv().getOrDefault("TEST_ACTIVITY_NAME", "[Automation] Test Activity");
         return this;
     }
 

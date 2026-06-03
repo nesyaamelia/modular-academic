@@ -11,7 +11,7 @@ public class CreateBankContentModel extends BaseModel {
     public String filePdf = "files/content/pdf-content.pdf";
     public String fileVideo = "files/asesmen/video.mov";
     public String fileDocument = "files/norms/file_norm.xlsx";
-    public String inputVirtual = "https://meet.google.com/rzj-wqwz-cjv?authuser=0";
+    public String inputVirtual = "https://meet.example.com/test-meeting-link";
     public String fileImage = "files/content/image-content.jpg";
     public String fileLargePdf = "files/content/pdf-large.pdf";
     public String fileLargeVideo = "files/content/video-large.mov";

@@ -30,14 +30,14 @@ public class BankClusterModel extends BaseModel {
     public BankClusterModel searchByValidNameCluster() {
         BankClusterModel data = new BankClusterModel();
         data.searchBy = "name";
-        data.searchKeyword = "[Automation] Bank Cluster 22";
+        data.searchKeyword = "[Automation] Bank Cluster " + RandomNumber.getRandomInteger(1, 100);
         return data;
     }
 
     public BankClusterModel searchByValidId() {
         BankClusterModel data = new BankClusterModel();
         data.searchBy = "id";
-        data.searchKeyword = "162";
+        data.searchKeyword = System.getenv().getOrDefault("TEST_CLUSTER_ID", "1");
         return data;
     }
 

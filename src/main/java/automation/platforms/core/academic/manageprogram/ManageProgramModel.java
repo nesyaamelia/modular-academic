@@ -11,12 +11,12 @@ public class ManageProgramModel extends BaseModel {
     public String searchOption;
 
     public ManageProgramModel searchByValidName(){
-        searchKeyword = "NSY - Smoketest Activity Platform";
+        searchKeyword = System.getenv().getOrDefault("TEST_PROGRAM_NAME", "[Automation] Test Program");
         return this;
     }
 
     public ManageProgramModel searchByInvalidId(){
-        searchKeyword = "000000";
+        searchKeyword = System.getenv().getOrDefault("TEST_PROGRAM_ID", "1");
         return this;
     }
 

@@ -27,11 +27,11 @@ public class BankClusterLocator extends BaseLocator {
     public final String FILTER_ACTIVE = "//div[@id='btn-filter-status']//span[text()='Aktif']/parent::label";
     public final String FILTER_INACTIVE = "//div[@id='btn-filter-status']//span[text()='Tidak Aktif']/parent::label";
     public final String BUTTON_RESET = "#btn-reset-filter";
-    public final String BUTTON_DETAIL_CLUSTER = "#cluster-detail-162-link";
+    public final String BUTTON_DETAIL_CLUSTER = "#cluster-detail-{CLUSTER_ID}-link";
     public final String TITLE_DETAIL_PAGE = "//div[contains(@class,'font-heading-6') and text()='Detail Cluster']";
 
     //edit page
-    public final String BUTTON_EDIT_CLUSTER = "#cluster-edit-162-link";
+    public final String BUTTON_EDIT_CLUSTER = "#cluster-edit-{CLUSTER_ID}-link";
     public final String TOGGLE_STATUS_CLUSTER = "label#cluster-status-toggle > div";
     public final String BUTTON_SUBMIT_POPUP = "(//span[text()= 'Nonaktifkan'])[1]";
     public final String BUTTON_SUBMIT_POPUP_RELATION_FRAMEWORK = "(//span[text()= 'Nonaktifkan'])[2]";

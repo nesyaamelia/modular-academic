@@ -7,12 +7,12 @@ public class ListBankDimensionModel extends BaseModel {
     public String filterStatusOption;
 
     public ListBankDimensionModel searchByValidId(){
-        searchKeyword = "89";
+        searchKeyword = System.getenv().getOrDefault("TEST_DIMENSION_ID", "1");
         return this;
     }
 
     public ListBankDimensionModel searchByValidName(){
-        searchKeyword = "Dimensi Analyst";
+        searchKeyword = System.getenv().getOrDefault("TEST_DIMENSION_NAME", "[Automation] Dimensi");
         return this;
     }
 

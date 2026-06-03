@@ -9,12 +9,12 @@ public class ListBankContentModel extends BaseModel {
     public String filterOption;
 
     public ListBankContentModel searchByValidId(){
-        searchKeyword = "165";
+        searchKeyword = System.getenv().getOrDefault("TEST_CONTENT_ID", "1");
         return this;
     }
 
     public ListBankContentModel searchByValidName(){
-        searchKeyword = "Audio Automation Edited";
+        searchKeyword = "[Automation] Content";
         return this;
     }
 

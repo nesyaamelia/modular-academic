@@ -15,7 +15,7 @@ public class ListBankTypeActivityModel extends BaseModel {
 
     public ListBankTypeActivityModel searchByValidId(){
         ListBankTypeActivityModel data = new ListBankTypeActivityModel();
-        data.searchKeyword = "18";
+        data.searchKeyword = System.getenv().getOrDefault("TEST_ACTIVITY_TYPE_ID", "1");
         data.searchBy = "id";
         return data;
     }
@@ -30,7 +30,7 @@ public class ListBankTypeActivityModel extends BaseModel {
 
     public ListBankTypeActivityModel searchByValidNameActivity(){
         ListBankTypeActivityModel data = new ListBankTypeActivityModel();
-        data.searchKeyword = "[Automation] Aktivitas semua konten belajar";
+        data.searchKeyword = System.getenv().getOrDefault("TEST_ACTIVITY_TYPE_NAME", "[Automation] Test Type Activity");
         data.searchBy = "name";
         return data;
     }

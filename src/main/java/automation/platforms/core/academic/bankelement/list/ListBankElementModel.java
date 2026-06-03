@@ -6,12 +6,12 @@ public class ListBankElementModel extends BaseModel {
     public String searchKeyword;
 
     public ListBankElementModel searchByValidKeyword(){
-       searchKeyword = "1";
+       searchKeyword = System.getenv().getOrDefault("TEST_ELEMENT_ID", "1");
        return this;
     }
 
     public ListBankElementModel searchByValidKeywordOrganizationElement(){
-        searchKeyword = "62";
+        searchKeyword = System.getenv().getOrDefault("TEST_ELEMENT_ID", "1");
         return this;
     }
 }
