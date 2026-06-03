@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Academic Platform - Full Regression Suite" parallel="none" verbose="1">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <!-- ======================== ACADEMIC MODULE ======================== -->
+    <test name="Bank Behavioral Objective">
+        <classes>
+            <class name="automation.testcase.platforms.core.academic.bankbehavioralobjective.BankBehavioralObjectiveTest"/>
+        </classes>
+    </test>
+
+    <test name="Bank Cluster">
+        <classes>
+            <class name="automation.testcase.platforms.core.academic.bankcluster.BankClusterTest"/>
+        </classes>
+    </test>
+
+    <test name="Bank Content - Create">
+        <classes>
+            <class name="automation.testcase.platforms.core.academic.bankcontent.create.CreateBankContentTest"/>
+        </classes>
+    </test>
+
+    <test name="Bank Content - Edit">
+        <classes>
+            <class name="automation.testcase.platforms.core.academic.bankcontent.edit.EditBankContentTest"/>
+        </classes>
+    </test>
+
+    <test name="Bank Content - List">
+        <classes>
+            <class name="automation.testcase.platforms.core.academic.bankcontent.list.ListBankContentTest"/>
+        </classes>
+    </test>
+
+    <test name="Bank Dimension">
+        <classes>
+            <class name="automation.testcase.platforms.core.academic.bankdimension.BankDimensionTest"/>
+            <class name="automation.testcase.platforms.core.academic.bankdimension.create.CreateBankDimensionTest"/>
+            <class name="automation.testcase.platforms.core.academic.bankdimension.edit.EditBankDimensionTest"/>
+        </classes>
+    </test>
+
+    <test name="Bank Element">
+        <classes>
+            <class name="automation.testcase.platforms.core.academic.bankelement.create.CreateBankElementTest"/>
+            <class name="automation.testcase.platforms.core.academic.bankelement.edit.EditBankElementTest"/>
+            <class name="automation.testcase.platforms.core.academic.bankelement.list.ListBankElementTest"/>
+        </classes>
+    </test>
+
+    <test name="Bank Framework">
+        <classes>
+            <class name="automation.testcase.platforms.core.academic.bankframework.BankFrameworkTest"/>
+        </classes>
+    </test>
+
+    <test name="Bank Type Activity">
+        <classes>
+            <class name="automation.testcase.platforms.core.academic.banktypeactivity.create.CreateBankTypeActivityTest"/>
+            <class name="automation.testcase.platforms.core.academic.banktypeactivity.edit.EditBankTypeActivityTest"/>
+            <class name="automation.testcase.platforms.core.academic.banktypeactivity.list.ListBankTypeActivityTest"/>
+        </classes>
+    </test>
+
+    <test name="Category Interpretation Score">
+        <classes>
+            <class name="automation.testcase.platforms.core.academic.categoryinterpretationscore.create.CreateCategoryInterpretationScoreTest"/>
+            <class name="automation.testcase.platforms.core.academic.categoryinterpretationscore.edit.EditCategoryInterpretationScoreTest"/>
+            <class name="automation.testcase.platforms.core.academic.categoryinterpretationscore.list.ListCategoryInterpretationScoreTest"/>
+        </classes>
+    </test>
+
+    <test name="Manage Activity">
+        <classes>
+            <class name="automation.testcase.platforms.core.academic.manageactivity.ManageActivityTest"/>
+            <class name="automation.testcase.platforms.core.academic.manageactivity.create.CreateManageActivityTest"/>
+        </classes>
+    </test>
+
+    <test name="Manage Program">
+        <classes>
+            <class name="automation.testcase.platforms.core.academic.manageprogram.ManageProgramTest"/>
+        </classes>
+    </test>
+
+</suite>

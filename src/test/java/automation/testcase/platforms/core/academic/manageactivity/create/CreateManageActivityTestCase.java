@@ -1,0 +1,19 @@
+package mu.core.id.website.testcase.platforms.core.academic.manageactivity.create;
+
+public interface CreateManageActivityTestCase {
+    void createStep_1_1AktivitasDasarSuccessfullyCreateActivityWithAppropriateContent();
+    void createStep_1_2AcademicFrameworkFailedToProceedToStep_2IfBehavioralObjectiveRelationHaveNotBeenSelected();
+    void tambahStep_2_2JadwalSuccessfullyCreatedStep_2ActivityWithJadwalToggleInactive();
+    void tambahStep_2_2JadwalSuccessfullyCreatedStep_2ActivityWhenStartAndEndDateTimeAreTheSame();
+    void tambahStep_2_2JadwalSuccessfullyCreatedStep_2ActivityWhenStartDateTimeIsEarlierThanEndDateTime();
+    void createStep_2_2KuotaJadwalAktivitasKuotaTersediaFieldAppearsWhenUserSelectJenisKuotaAktivitasIsTerbatas();
+    void tambahStep_3PengaturanKontenSuccessfullyCreateStep_3ActivityWithKontenBelumTersedia();
+    void tambahStep_3PengaturanKontenSuccessfullyCreateStep_3ActivityWithKontenTersediaAmbilDariBankKonten();
+    void tambahStep_3PengaturanKontenSuccessfullyCreateStep_3ActivityWithKontenTersediaBuatKontenBaru();
+    void tambahStep_3PengaturanKontenFailedToSaveStep_3WithBankKontenWhenNoContentAndNoInstructionProvided();
+    void tambahStep_3PengaturanKontenFailedToSaveStep_3WithBankKontenWhenInstructionExceeds_3000Characters();
+    void createAktivitasPengaturanLaporanSuccessfullyFillAllFieldOnTabPengaturanLaporanSection_4_1Laporan();
+    void createAktivitasPengaturanLaporanFailedSaveTabPengaturanLaporanWhenUserDoesnTInputFasilitatorLaporanAktivitasField();
+    void createAktivitasPengaturanOperasionalSuccessfullyCreateActivityWithToggleAktivitasBerbayarIsOff();
+    void createAktivitasPengaturanOperasionalFailedToCreateActivityWhenRequiredFieldsAreEmpty();
+}

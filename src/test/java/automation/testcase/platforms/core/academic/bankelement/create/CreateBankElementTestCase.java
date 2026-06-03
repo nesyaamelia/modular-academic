@@ -1,0 +1,18 @@
+package mu.core.id.website.testcase.platforms.core.academic.bankelement.create;
+
+public interface CreateBankElementTestCase {
+    void tambahElementMasterSuccessfullyCreateElementMasterWithValidRequiredFieldsAndCharacterLimits();
+    void tambahElementMasterFailedToCreatedElementMasterWithOnlyOptionalFieldsFilled();
+    void tambahElementMasterFailedToCreatedElementMasterWithAllFieldsEmpty();
+    void tambahElementMasterFailedToCreatedElementMasterWithInputFieldsExceedingTheCharacterLimit();
+    void tambahElementMasterFailedToCreateElementMasterWithDuplicateValuesInTheSameOrganization();
+    void tambahElementMasterFailedToCreateElementMasterWithUnsupportedSpecialCharactersInKodeElementMaster();
+    void tambahElementMasterSuccessfullyCancelsElementMasterCreationWhenClickTinggalkanHalamanButton();
+    void tambahElementOrganisasiSuccessfullyCreatesElementOrganisasiWithValidRequiredFieldsAndCharacterLimits();
+    void tambahElementOrganisasiFailedToCreatedElementOrganisasiWithOnlyOptionalFieldsFilled();
+    void tambahElementOrganisasiFailedToCreatedElementOrganisasiWithAllFieldsEmpty();
+    void tambahElementOrganisasiConfirmationSimpanDanTinggalkanHalamanTriggeredWhenUsingBreadcrumbSidebarAndBrowserBackWithUnsavedChanges();
+    void tambahElementOrganisasiFailedToCreatedElementOrganisasiWithInputFieldsExceedingTheCharacterLimit();
+    void tambahElementOrganisasiFailedToCreateElementOrganisasiWithDuplicateValuesInTheSameOrganization();
+    void tambahElementOrganisasiFailedToCreateElementOrganisasiWithUnsupportedSpecialCharactersInKodeElementOrganisasi();
+}

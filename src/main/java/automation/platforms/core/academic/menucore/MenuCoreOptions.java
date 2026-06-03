@@ -1,0 +1,58 @@
+package automation.platforms.core.academic.menucore;
+
+public enum MenuCoreOptions {
+    KELOLA_PENGGUNA ("admin/user"),
+    GROUP_PENGGUNA("admin/group"),
+    KELOLA_PERAN("admin/role"),
+    DOKUMEN_PANDUAN("admin/guide-document"),
+    DAFTAR_KELAS("admin/program"),
+    PENDAFTARAN_MASSAL_KELAS("admin/program/bulk"),
+    KELOLA_TUJUAN_PEMBELAJARAN("admin/lo"),
+    KOPERASI_KONTEN("admin/program/content"),
+    KELOLA_SERTIFIKAT("admin/program/manage_sertifikat"),
+    RAPOR("admin/program/rapor-murid"),
+    LAPORAN_MASSAL_MITRA("admin/partner-report-bulk"),
+    BIDANG_STUDI("admin/subject"),
+    KELOLA_JENIS_AKTIVITAS("admin/type-of-activity"),
+    KOMPETENSI("admin/competency"),
+    KOMPETENSI_LEMBAGA("admin/institutional-competence"),
+    TINGKAT_KEMAHIRAN("admin/proficiency_level"),
+    LEMBAGA("admin/lembaga"),
+    LEMBAGA_PAYUNG("admin/lembaga_payung"),
+    KELOLA_LEARNING_SPACE("admin/learning-space"),
+    KELOLA_TAGIHAN("admin/kelola-tagihan"),
+    PAKET_KELAS("admin/learning-package"),
+    PAKET_BELAJAR_DAN_TAGIHAN("admin/paket-tagihan"),
+    LAPORAN_KEUANGAN("admin/laporan-keuangan"),
+    LAPORAN_LEMBAGA("admin/laporan-lembaga"),
+    DATA_TRANSAKSI_MURID("admin/student-data"),
+    KELOLA_PENGGUNA_LEMBAGA("admin/user-institution"),
+    KELOLA_PRODUK("admin/kelola-produk"),
+    DAFTAR_TRANSAKSI("admin/transaction"),
+    TRANSAKSI_PRAKERJA("admin/transaction/prakerja"),
+    LAPORAN_HARIAN("admin/daily-reporting"),
+    REKAP_PENGGUNA_KELAS("admin/rekap-pengguna"),
+    KELOLA_METODE_PEMBAYARAN("admin/kelola-metode-pembayaran"),
+    KELOLA_BANNER("admin/kelola-banner"),
+    KELOLA_REKOMENDASI("admin/kelola-rekomendasi"),
+    KELOLA_KONTEN("admin/kelola-konten"),
+    KELOLA_PROGRAM_DAN_LEMBAGA("admin/kelola-program-lembaga"),
+    NOTIFIKASI("admin/notif"),
+    KELOLA_BEASISWA_DAN_REFERRAL("admin/beasiswa-referral"),
+    LAPORAN_HARIAN_MARKETING("admin/marketing-daily"),
+    PENGUMUMAN("admin/announcement"),
+    LEADS_MARKETING("admin/leads"),
+    TRANSAKSI_REFERRAL("admin/referral-transaction"),
+    CAMPAIGN("admin/campaign"),
+    DAFTAR_PENGIRIMAN("admin/shipment"),
+    DASHBOARD_SEKOLAH("admin/dashboard-sekolah"),
+    LAPORAN_INTERNAL("admin/internal-report"),
+    LAPORAN_LEMBAGA_REPORTING("admin/institution-report"),
+    LAPORAN_DAERAH("admin/regional-report"),
+    LAPORAN_PROGRAM_LEMBAGA("admin/institution-program-report");
+
+    public final String getValue;
+    MenuCoreOptions (String value) {
+        this.getValue = value;
+    }
+}

@@ -1,0 +1,32 @@
+# ===== BUILD OUTPUT =====
+target/
+*.class
+*.jar
+*.war
+
+# ===== ENVIRONMENT & SECRETS =====
+.env
+*.env.local
+config/local.properties
+
+# ===== ALLURE RESULTS (generated at runtime) =====
+allure-results/
+allure-report/
+
+# ===== IDE =====
+.idea/
+*.iml
+.vscode/
+*.eclipse
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== PLAYWRIGHT =====
+playwright-report/
+test-results/
+
+# ===== LOGS =====
+*.log
+logs/

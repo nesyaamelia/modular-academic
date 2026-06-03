@@ -1,0 +1,18 @@
+package mu.core.id.website.testcase.platforms.core.academic.bankelement.edit;
+
+public interface EditBankElementTestCase {
+    void ubahElementMasterSuccessfullyUpdatedElementMasterWithValidRequiredFieldsAndCharacterLimits();
+    void ubahElementMasterFailedToUpdateElementMasterWithAllFieldsEmpty();
+    void ubahElementMasterFailedToUpdateElementMasterWithOnlyOptionalFieldsFilled();
+    void ubahElementMasterFailedToCreatedElementMasterWithInputFieldsExceedingTheCharacterLimit();
+    void ubahElementMasterFailedToUpdateElementMasterWithDuplicateValueInTheSameOrganization();
+    void ubahElementMasterFailedToUpdateElementMasterWithUnsupportedSpecialCharactersInKodeElementMaster();
+    void ubahElementMasterSuccessfullyDeactivatesElementMasterAfterClickingNonaktifkanButton();
+    void ubahElementOrganisasiSuccessfullyUpdatedElementOrganisasiWithValidRequiredFieldsAndCharacterLimits();
+    void ubahElementOrganisasiFailedToUpdateElementOrganisasiWithOnlyOptionalFieldsFilled();
+    void ubahElementOrganisasiFailedToUpdateElementOrganisasiWithAllFieldsEmpty();
+    void ubahElementOrganisasiFailedToCreatedElementOrganisasiWithInputFieldsExceedingTheCharacterLimit();
+    void ubahElementOrganisasiFailedToUpdateElementOrganisasiWithDuplicateValueInTheSameOrganization();
+    void ubahElementOrganisasiFailedToUpdateElementOrganisasiWithUnsupportedSpecialCharactersInKodeElementOrganisasi();
+    void ubahElementOrganisasiNonaktifkanRelasiAcademicFrameworkConfirmationTriggeredWhenSetElementOrganisasiStatusFromOnToOff();
+}
